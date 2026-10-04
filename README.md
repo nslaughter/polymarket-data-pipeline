@@ -11,8 +11,9 @@ decisions behind that work explicit.
 
 **Status:** Project brief. This repository currently contains this README.
 The pipeline, deployment configuration, storage format, and recovery examples
-are planned; nothing described here has been implemented or tested yet. This is
-an independent demonstration using Polymarket market data. It is not affiliated
+are planned; nothing described here has been implemented or tested yet. The
+pipeline will be written in Python, like the client it builds on. This is an
+independent demonstration using Polymarket market data. It is not affiliated
 with or endorsed by Polymarket, and it is not client work.
 
 ## What this project demonstrates
@@ -34,8 +35,9 @@ and a documented handover. It is meant to show:
   before the buffer's limits are reached.
 - **Source uncertainty kept with the data.** Known capture interruptions and
   unresolved completeness travel with the stored dataset.
-- **A pinned dependency.** The pipeline consumes a tagged release of the
-  client and checks its behavior when that release is upgraded.
+- **A pinned dependency.** The pipeline installs a tagged release of the
+  Python client as a pinned package and checks its behavior when that release
+  is upgraded.
 
 The pipeline is the second of two stages, built on
 [polymarket-market-data-client](https://github.com/nslaughter/polymarket-market-data-client).
